@@ -1,0 +1,15 @@
+{
+  "name": "nikhilreddy_kankanala-bootstrap",
+  "version": "1.0.0",
+  "description": "INM 320 SAA Bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "author": "NikhilReddy Kankanala",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

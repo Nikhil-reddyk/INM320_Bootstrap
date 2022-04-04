@@ -1,0 +1,61 @@
+.w-10{
+ width: 10%
+}
+.table-subtext{
+ font-size: 12px;
+    color: #C5C7CD;
+}
+.table-maintext{
+ letter-spacing: 0.2px;
+ color: #252733;
+ font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+}
+.icon-bg{
+
+ color: #C5C7CD;
+}
+table td{
+ vertical-align: middle
+}
+th{
+ font-weight: 700;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height */
+
+letter-spacing: 0.2px;
+
+/* grayscale / gray */
+
+color: #9FA2B4;
+}
+.table-img{
+ width: 100%
+}
+.form-select,.form-select:focus{
+ display: unset !important;
+ width: unset !important;
+ border: unset !important;
+}
+/* mobile view */
+@media screen and (max-width: 600px) {
+ table thead {
+   display: none;
+ }
+ table td {
+   display: flex;
+ }
+ 
+ table td::before {
+   content: attr(label);
+   font-weight: bold;
+   width: 120px;
+   min-width: 120px;
+ }
+ .table-img{
+  width: 45px;
+ }
+ 
+}

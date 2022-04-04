@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="generator" content="Hugo 0.88.1" />
+    <title>INM320SAA- Dashboard</title>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.1/examples/dashboard/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/tickets.css" rel="stylesheet" />
+
+    <!-- fontawesome css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="navbar sticky-top bg-light navbar-light p-0">
+      <a class="navbar-brand col-md-3 navtext col-lg-2 me-0 px-3" href="#">
+        <img src="/images/logo.png" alt="" />&nbsp;&nbsp;Dashboard Kit
+      </a>
+
+      <button
+        class="navbar-toggler position-absolute d-md-none collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#sidebarMenu"
+        aria-controls="sidebarMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </header>
+
+    <!-- Sidebar menu -->
+    <div class="container-fluid">
+      <div class="row">
+        <nav
+          id="sidebarMenu"
+          class="col-md-3 col-lg-2 d-md-block sidebar collapse"
+        >
+          <div class="position-sticky pt-3">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">
+                  <i class="fa-solid fa-chart-pie"> </i>&nbsp; Overview
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <i class="fa-solid fa-ticket"></i>&nbsp; Tickets
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa-solid fa-lightbulb"></i>&nbsp; Ideas
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa-solid fa-people-group"></i>&nbsp; Contacts
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa-solid fa-user-tie"></i>&nbsp; Agents
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa-solid fa-newspaper"></i>&nbsp; Articles
+                </a>
+              </li>
+              <hr />
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa-solid fa-gear"></i>&nbsp; Settings
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="airplay"></span>
+                  Subscription
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <!-- header Start -->
+
+          <div class="row custom-header pt-2">
+            <div class="col-md-7 col-3 me-0 px-3">
+              <h4 class="align-items-center">Tickets</h4>
+            </div>
+
+            <div class="col-md-5 col-9 me-0 px-3">
+              <div class="d-flex flex-row bd-highlight align-items-center">
+                <div class="p-2 bd-highlight">
+                  <a href="#">
+                    <span data-feather="search"></span>
+                  </a>
+                </div>
+                <div class="p-2 bd-highlight">
+                  <a href="#">
+                    <span data-feather="bell"></span>
+                  </a>
+                </div>
+                <div class="p-2 bd-highlight">
+                  <span>|</span>
+                </div>
+                <div class="p-2 bd-highlight">
+                  <span>Jones Ferdinand</span>
+                </div>
+                <div class="p-2 bd-highlight">
+                  <span><img src="images/profile.png" class="profile" /></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- header End -->
+          <!-- table row -->
+          <div class="container">
+            <div class="card p-4">
+              <div class="card-title">
+                <div class="row">
+                  <div class="col-sm-6 col-6">All Tickets</div>
+                  <div class="col-sm-6 col-6 text-end table-subtext">
+                    <span
+                      ><i class="fa-solid fa-arrow-up-short-wide"></i
+                      >&nbsp;Sort</span
+                    >
+                    <span><i class="fa-solid fa-filter"></i>&nbsp;Filter</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Ticket Details</th>
+                      <th>Customer Name</th>
+                      <th>Date</th>
+                      <th>Priority</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="row">
+                          <div class="col-2">
+                            <img
+                              class="table-img"
+                              src="/images/nik.png"
+                              alt=""
+                              srcset=""
+                            />
+                          </div>
+                          <div class="col-10 text-left">
+                            <span class="table-maintext"
+                              >Contact Email not linked</span
+                            ><br />
+                            <span class="table-subtext">Updated 1 day ago</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="row">
+                          <div class="col-12 text-left">
+                            <span class="table-maintext">Tom Cruise</span><br />
+                            <span class="table-subtext">on 24.05.2019</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="row">
+                          <div class="col-12 text-left">
+                            <span class="table-maintext">May 26, 2019</span
+                            ><br />
+                            <span class="table-subtext">6:30 PM</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td><p class="btn btn-danger rounded-pill">High</p></td>
+                      <td>
+                        <i
+                          class="fa fa-ellipsis-v icon-bg"
+                          aria-hidden="true"
+                        ></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="row">
+                          <div class="col-2">
+                            <img
+                              class="table-img"
+                              src="/images/nik.png"
+                              alt=""
+                              srcset=""
+                            />
+                          </div>
+                          <div class="col-10 text-left">
+                            <span class="table-maintext"
+                              >Contact Email not linked</span
+                            ><br />
+                            <span class="table-subtext">Updated 1 day ago</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="row">
+                          <div class="col-12 text-left">
+                            <span class="table-maintext">Tom Cruise</span><br />
+                            <span class="table-subtext">on 24.05.2019</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="row">
+                          <div class="col-12 text-left">
+                            <span class="table-maintext">May 26, 2019</span
+                            ><br />
+                            <span class="table-subtext">6:30 PM</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="btn btn-success rounded-pill">Normal</p>
+                      </td>
+                      <td>
+                        <i
+                          class="fa fa-ellipsis-v icon-bg"
+                          aria-hidden="true"
+                        ></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="row">
+                          <div class="col-2">
+                            <img
+                              class="table-img"
+                              src="/images/nik.png"
+                              alt=""
+                              srcset=""
+                            />
+                          </div>
+                          <div class="col-10 text-left">
+                            <span class="table-maintext"
+                              >Contact Email not linked</span
+                            ><br />
+                            <span class="table-subtext">Updated 1 day ago</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="row">
+                          <div class="col-12 text-left">
+                            <span class="table-maintext">Tom Cruise</span><br />
+                            <span class="table-subtext">on 24.05.2019</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="row">
+                          <div class="col-12 text-left">
+                            <span class="table-maintext">May 26, 2019</span
+                            ><br />
+                            <span class="table-subtext">6:30 PM</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td><p class="btn btn-warning rounded-pill">Low</p></td>
+                      <td>
+                        <i
+                          class="fa fa-ellipsis-v icon-bg"
+                          aria-hidden="true"
+                        ></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="text-end table-subtext">
+                  <span
+                    >Rows per page
+                    <select class="form-select" name="" id="">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select></span
+                  >
+                  <span>1-8 of 1240</span>
+                  <span
+                    ><i class="fa-solid fa-chevron-left"></i
+                    ><i class="fa-solid fa-chevron-right"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- table row -->
+        </main>
+      </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
+      integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
+      integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha"
+      crossorigin="anonymous"
+    ></script>
+    <script src="dashboard.js"></script>
+
+    <script>
+      window.setMobileTable = function (selector) {
+        // if (window.innerWidth > 600) return false;
+        const tableEl = document.querySelector(selector);
+        const thEls = tableEl.querySelectorAll("thead th");
+        const tdLabels = Array.from(thEls).map((el) => el.innerText);
+        tableEl.querySelectorAll("tbody tr").forEach((tr) => {
+          Array.from(tr.children).forEach((td, ndx) =>
+            td.setAttribute("label", tdLabels[ndx])
+          );
+        });
+      };
+      setMobileTable("table");
+    </script>
+  </body>
+</html>
